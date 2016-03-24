@@ -15,6 +15,7 @@
 		8A2A8C511CA47A55001EF49F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A2A8C501CA47A55001EF49F /* Main.storyboard */; };
 		8A2A8C531CA4804F001EF49F /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A8C521CA4804F001EF49F /* LoggedInViewController.swift */; };
 		8A2A8C551CA48149001EF49F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A8C541CA48148001EF49F /* HomeViewController.swift */; };
+		8A2A8C571CA487D0001EF49F /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A2A8C561CA487D0001EF49F /* fhconfig.plist */; };
 		9B23BDD68D26A6986867D803 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76997CD36A4121BB272AE3C5 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		8A2A8C501CA47A55001EF49F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8A2A8C521CA4804F001EF49F /* LoggedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		8A2A8C541CA48148001EF49F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8A2A8C561CA487D0001EF49F /* fhconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fhconfig.plist; sourceTree = "<group>"; };
 		FEEFE232BDF12B39A952C1C3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,13 +116,14 @@
 		8A2A8C211CA47900001EF49F /* saml-ios-swift */ = {
 			isa = PBXGroup;
 			children = (
-				8A2A8C221CA47900001EF49F /* AppDelegate.swift */,
-				8A2A8C501CA47A55001EF49F /* Main.storyboard */,
-				8A2A8C291CA47900001EF49F /* Assets.xcassets */,
-				8A2A8C2B1CA47900001EF49F /* LaunchScreen.storyboard */,
 				8A2A8C2E1CA47900001EF49F /* Info.plist */,
+				8A2A8C561CA487D0001EF49F /* fhconfig.plist */,
+				8A2A8C2B1CA47900001EF49F /* LaunchScreen.storyboard */,
+				8A2A8C501CA47A55001EF49F /* Main.storyboard */,
+				8A2A8C221CA47900001EF49F /* AppDelegate.swift */,
 				8A2A8C541CA48148001EF49F /* HomeViewController.swift */,
 				8A2A8C521CA4804F001EF49F /* LoggedInViewController.swift */,
+				8A2A8C291CA47900001EF49F /* Assets.xcassets */,
 			);
 			path = "saml-ios-swift";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2A8C571CA487D0001EF49F /* fhconfig.plist in Resources */,
 				8A2A8C511CA47A55001EF49F /* Main.storyboard in Resources */,
 				8A2A8C2D1CA47900001EF49F /* LaunchScreen.storyboard in Resources */,
 				8A2A8C2A1CA47900001EF49F /* Assets.xcassets in Resources */,
