@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  saml-ios-swift
-//
-//  Created by Daniel Passos on 3/24/16.
-//  Copyright © 2016 Red Hat. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
