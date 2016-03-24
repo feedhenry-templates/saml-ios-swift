@@ -1,13 +1,22 @@
 import UIKit
+import FeedHenry
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Initialized cloud connection
+        FH.init {(resp: Response, error: NSError?) -> Void in
+            if let error = error {
+                print("FH init failed. Error = \(error)")
+                return
+            }
+            print("initialized OK")
+        }
+        
         return true
     }
 
