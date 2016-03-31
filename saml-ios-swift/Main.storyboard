@@ -165,6 +165,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="SAML iOS Example" id="GDO-sg-0H7"/>
                     <connections>
+                        <outlet property="signInButton" destination="ZMW-re-VA2" id="Q6Z-LX-gPa"/>
                         <segue destination="Gnn-Bm-FSq" kind="presentation" identifier="showLoggedIn" animates="NO" modalPresentationStyle="pageSheet" id="r28-U8-fuY"/>
                     </connections>
                 </viewController>
