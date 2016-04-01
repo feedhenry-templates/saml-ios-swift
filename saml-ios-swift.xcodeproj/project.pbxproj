@@ -44,7 +44,7 @@
 		8A2A8C221CA47900001EF49F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A2A8C291CA47900001EF49F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A2A8C2C1CA47900001EF49F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8A2A8C2E1CA47900001EF49F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A2A8C2E1CA47900001EF49F /* saml-ios-swift-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "saml-ios-swift-Info.plist"; sourceTree = "<group>"; };
 		8A2A8C331CA47900001EF49F /* saml-ios-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "saml-ios-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2A8C371CA47900001EF49F /* saml_ios_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saml_ios_swiftTests.swift; sourceTree = "<group>"; };
 		8A2A8C391CA47900001EF49F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		8A2A8C211CA47900001EF49F /* saml-ios-swift */ = {
 			isa = PBXGroup;
 			children = (
-				8A2A8C2E1CA47900001EF49F /* Info.plist */,
+				8A2A8C2E1CA47900001EF49F /* saml-ios-swift-Info.plist */,
 				8A2A8C561CA487D0001EF49F /* fhconfig.plist */,
 				8A2A8C2B1CA47900001EF49F /* LaunchScreen.storyboard */,
 				8A2A8C501CA47A55001EF49F /* Main.storyboard */,
@@ -479,7 +479,7 @@
 			baseConfigurationReference = 54CE64B51745EABA9E6514B2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "saml-ios-swift/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/saml-ios-swift/saml-ios-swift-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FH.saml-ios-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,7 +491,7 @@
 			baseConfigurationReference = FEEFE232BDF12B39A952C1C3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "saml-ios-swift/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/saml-ios-swift/saml-ios-swift-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FH.saml-ios-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
