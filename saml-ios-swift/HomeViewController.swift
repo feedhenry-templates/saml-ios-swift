@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
 
         self.signInButton.enabled = false;
 
-        let args = ["token": "xxxx"]; //TODO: Replace by: Config.instance.uuid
+        let args = ["token": Config.instance.uuid];
 
         FH.cloud("/sso/session/login_host", method: HTTPMethod.POST,
                 args: args, headers: nil,

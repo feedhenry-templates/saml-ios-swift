@@ -12,7 +12,7 @@ class LoggedInViewController: UIViewController {
 
         super.viewDidLoad();
 
-        let args = ["token": "xxxx"]; //TODO: Replace by: Config.instance.uuid
+        let args = ["token": Config.instance.uuid];
 
         FH.cloud("sso/session/valid", method: HTTPMethod.POST,
                 args: args, headers: nil,
