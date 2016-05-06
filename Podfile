@@ -4,5 +4,5 @@ xcodeproj 'saml-ios-swift.xcodeproj'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'FeedHenry', :git => 'https://github.com/feedhenry/fh-ios-swift-sdk.git'
+pod 'FeedHenry', '4.0.0'
 
