@@ -11,31 +11,12 @@
 		8A2A8C231CA47900001EF49F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A8C221CA47900001EF49F /* AppDelegate.swift */; };
 		8A2A8C2A1CA47900001EF49F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2A8C291CA47900001EF49F /* Assets.xcassets */; };
 		8A2A8C2D1CA47900001EF49F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A2A8C2B1CA47900001EF49F /* LaunchScreen.storyboard */; };
-		8A2A8C381CA47900001EF49F /* saml_ios_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A8C371CA47900001EF49F /* saml_ios_swiftTests.swift */; };
-		8A2A8C431CA47900001EF49F /* saml_ios_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A8C421CA47900001EF49F /* saml_ios_swiftUITests.swift */; };
 		8A2A8C511CA47A55001EF49F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A2A8C501CA47A55001EF49F /* Main.storyboard */; };
 		8A2A8C531CA4804F001EF49F /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A8C521CA4804F001EF49F /* LoggedInViewController.swift */; };
 		8A2A8C551CA48149001EF49F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A8C541CA48148001EF49F /* HomeViewController.swift */; };
 		8A2A8C571CA487D0001EF49F /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A2A8C561CA487D0001EF49F /* fhconfig.plist */; };
 		8A62001D1CAC4A67001F81A6 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A62001C1CAC4A67001F81A6 /* WebviewViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8A2A8C341CA47900001EF49F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A2A8C171CA478FF001EF49F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A2A8C1E1CA478FF001EF49F;
-			remoteInfo = "saml-ios-swift";
-		};
-		8A2A8C3F1CA47900001EF49F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A2A8C171CA478FF001EF49F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A2A8C1E1CA478FF001EF49F;
-			remoteInfo = "saml-ios-swift";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		23797C8CE7F20C727504CF7C /* Pods-saml-ios-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saml-ios-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-saml-ios-swift/Pods-saml-ios-swift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,12 +25,6 @@
 		8A2A8C291CA47900001EF49F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A2A8C2C1CA47900001EF49F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A2A8C2E1CA47900001EF49F /* saml-ios-swift-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "saml-ios-swift-Info.plist"; sourceTree = "<group>"; };
-		8A2A8C331CA47900001EF49F /* saml-ios-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "saml-ios-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A2A8C371CA47900001EF49F /* saml_ios_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saml_ios_swiftTests.swift; sourceTree = "<group>"; };
-		8A2A8C391CA47900001EF49F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A2A8C3E1CA47900001EF49F /* saml-ios-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "saml-ios-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A2A8C421CA47900001EF49F /* saml_ios_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saml_ios_swiftUITests.swift; sourceTree = "<group>"; };
-		8A2A8C441CA47900001EF49F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A2A8C501CA47A55001EF49F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8A2A8C521CA4804F001EF49F /* LoggedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		8A2A8C541CA48148001EF49F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -68,20 +43,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A2A8C301CA47900001EF49F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A2A8C3B1CA47900001EF49F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,8 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				8A2A8C211CA47900001EF49F /* saml-ios-swift */,
-				8A2A8C361CA47900001EF49F /* saml-ios-swiftTests */,
-				8A2A8C411CA47900001EF49F /* saml-ios-swiftUITests */,
 				8A2A8C201CA478FF001EF49F /* Products */,
 				DC2D8BD0FEB0DA7FF4B031FA /* Pods */,
 				697C7CDC192626B4A174F733 /* Frameworks */,
@@ -109,8 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				8A2A8C1F1CA478FF001EF49F /* saml-ios-swift.app */,
-				8A2A8C331CA47900001EF49F /* saml-ios-swiftTests.xctest */,
-				8A2A8C3E1CA47900001EF49F /* saml-ios-swiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,24 +86,6 @@
 				8A2A8C291CA47900001EF49F /* Assets.xcassets */,
 			);
 			path = "saml-ios-swift";
-			sourceTree = "<group>";
-		};
-		8A2A8C361CA47900001EF49F /* saml-ios-swiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				8A2A8C371CA47900001EF49F /* saml_ios_swiftTests.swift */,
-				8A2A8C391CA47900001EF49F /* Info.plist */,
-			);
-			path = "saml-ios-swiftTests";
-			sourceTree = "<group>";
-		};
-		8A2A8C411CA47900001EF49F /* saml-ios-swiftUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8A2A8C421CA47900001EF49F /* saml_ios_swiftUITests.swift */,
-				8A2A8C441CA47900001EF49F /* Info.plist */,
-			);
-			path = "saml-ios-swiftUITests";
 			sourceTree = "<group>";
 		};
 		DC2D8BD0FEB0DA7FF4B031FA /* Pods */ = {
@@ -181,42 +120,6 @@
 			productReference = 8A2A8C1F1CA478FF001EF49F /* saml-ios-swift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8A2A8C321CA47900001EF49F /* saml-ios-swiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8A2A8C4A1CA47900001EF49F /* Build configuration list for PBXNativeTarget "saml-ios-swiftTests" */;
-			buildPhases = (
-				8A2A8C2F1CA47900001EF49F /* Sources */,
-				8A2A8C301CA47900001EF49F /* Frameworks */,
-				8A2A8C311CA47900001EF49F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8A2A8C351CA47900001EF49F /* PBXTargetDependency */,
-			);
-			name = "saml-ios-swiftTests";
-			productName = "saml-ios-swiftTests";
-			productReference = 8A2A8C331CA47900001EF49F /* saml-ios-swiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		8A2A8C3D1CA47900001EF49F /* saml-ios-swiftUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8A2A8C4D1CA47900001EF49F /* Build configuration list for PBXNativeTarget "saml-ios-swiftUITests" */;
-			buildPhases = (
-				8A2A8C3A1CA47900001EF49F /* Sources */,
-				8A2A8C3B1CA47900001EF49F /* Frameworks */,
-				8A2A8C3C1CA47900001EF49F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8A2A8C401CA47900001EF49F /* PBXTargetDependency */,
-			);
-			name = "saml-ios-swiftUITests";
-			productName = "saml-ios-swiftUITests";
-			productReference = 8A2A8C3E1CA47900001EF49F /* saml-ios-swiftUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -229,14 +132,6 @@
 				TargetAttributes = {
 					8A2A8C1E1CA478FF001EF49F = {
 						CreatedOnToolsVersion = 7.3;
-					};
-					8A2A8C321CA47900001EF49F = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 8A2A8C1E1CA478FF001EF49F;
-					};
-					8A2A8C3D1CA47900001EF49F = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 8A2A8C1E1CA478FF001EF49F;
 					};
 				};
 			};
@@ -254,8 +149,6 @@
 			projectRoot = "";
 			targets = (
 				8A2A8C1E1CA478FF001EF49F /* saml-ios-swift */,
-				8A2A8C321CA47900001EF49F /* saml-ios-swiftTests */,
-				8A2A8C3D1CA47900001EF49F /* saml-ios-swiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -269,20 +162,6 @@
 				8A2A8C511CA47A55001EF49F /* Main.storyboard in Resources */,
 				8A2A8C2D1CA47900001EF49F /* LaunchScreen.storyboard in Resources */,
 				8A2A8C2A1CA47900001EF49F /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A2A8C311CA47900001EF49F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A2A8C3C1CA47900001EF49F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,36 +227,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A2A8C2F1CA47900001EF49F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8A2A8C381CA47900001EF49F /* saml_ios_swiftTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A2A8C3A1CA47900001EF49F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8A2A8C431CA47900001EF49F /* saml_ios_swiftUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8A2A8C351CA47900001EF49F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8A2A8C1E1CA478FF001EF49F /* saml-ios-swift */;
-			targetProxy = 8A2A8C341CA47900001EF49F /* PBXContainerItemProxy */;
-		};
-		8A2A8C401CA47900001EF49F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8A2A8C1E1CA478FF001EF49F /* saml-ios-swift */;
-			targetProxy = 8A2A8C3F1CA47900001EF49F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8A2A8C2B1CA47900001EF49F /* LaunchScreen.storyboard */ = {
@@ -498,52 +348,6 @@
 			};
 			name = Release;
 		};
-		8A2A8C4B1CA47900001EF49F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "saml-ios-swiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "FH.saml-ios-swiftTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/saml-ios-swift.app/saml-ios-swift";
-			};
-			name = Debug;
-		};
-		8A2A8C4C1CA47900001EF49F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "saml-ios-swiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "FH.saml-ios-swiftTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/saml-ios-swift.app/saml-ios-swift";
-			};
-			name = Release;
-		};
-		8A2A8C4E1CA47900001EF49F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "saml-ios-swiftUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "FH.saml-ios-swiftUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "saml-ios-swift";
-			};
-			name = Debug;
-		};
-		8A2A8C4F1CA47900001EF49F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "saml-ios-swiftUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "FH.saml-ios-swiftUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "saml-ios-swift";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -561,24 +365,6 @@
 			buildConfigurations = (
 				8A2A8C481CA47900001EF49F /* Debug */,
 				8A2A8C491CA47900001EF49F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8A2A8C4A1CA47900001EF49F /* Build configuration list for PBXNativeTarget "saml-ios-swiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8A2A8C4B1CA47900001EF49F /* Debug */,
-				8A2A8C4C1CA47900001EF49F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8A2A8C4D1CA47900001EF49F /* Build configuration list for PBXNativeTarget "saml-ios-swiftUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8A2A8C4E1CA47900001EF49F /* Debug */,
-				8A2A8C4F1CA47900001EF49F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
