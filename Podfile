@@ -1,8 +1,9 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-xcodeproj 'saml-ios-swift.xcodeproj'
+project 'saml-ios-swift.xcodeproj'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'FeedHenry', '~> 4.1.1'
-
+target 'saml-ios-swift' do
+	pod 'FeedHenry', '~> 4.1.1'
+end
