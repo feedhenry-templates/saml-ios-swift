@@ -33,7 +33,7 @@ class WebviewViewController: UIViewController, UIWebViewDelegate {
     }
 
 
-    @available(iOS 2.0, *) func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
+    @available(iOS 2.0, *) func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
         print("Webview fail with error \(error)");
     }
 
@@ -41,7 +41,7 @@ class WebviewViewController: UIViewController, UIWebViewDelegate {
         print("shouldStartLoadWithRequest");
         let currentURL = request.URL!.absoluteString
         print("URL: \(currentURL)");
-        if currentURL.hasSuffix("login/ok") {
+        if currentURL!.hasSuffix("login/ok") {
             presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
             NSNotificationCenter.defaultCenter().postNotificationName("WebViewClosed", object: nil)
         }

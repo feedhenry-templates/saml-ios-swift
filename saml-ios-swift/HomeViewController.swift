@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
 
         // TODO replace by #selector Swift2.2 syntax once BF uses Xcode7.3
         NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: "onCloseWebview", name: "WebViewClosed", object: nil)
+            selector: #selector(HomeViewController.onCloseWebview), name: "WebViewClosed", object: nil)
     }
 
     @IBAction func login(sender: AnyObject) {
