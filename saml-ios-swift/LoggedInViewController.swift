@@ -29,8 +29,8 @@ class LoggedInViewController: UIViewController {
 
         let args = ["token": Config.instance.uuid];
 
-        FH.cloud("sso/session/valid", method: HTTPMethod.POST,
-                args: args, headers: nil,
+        FH.cloud(path: "sso/session/valid", method: HTTPMethod.POST,
+                args: args as [String : AnyObject]?, headers: nil,
                 completionHandler: {
                     (response: Response, error: NSError?) -> Void in
                     if let error = error {
@@ -39,14 +39,13 @@ class LoggedInViewController: UIViewController {
                     }
 
                     let parsedRes: NSDictionary = response.parsedResponse!
-                    self.name.text = parsedRes.valueForKey("first_name") as? String;
-                    self.email.text = parsedRes.valueForKey("email") as? String;
-                    self.session.text = parsedRes.valueForKey("expires") as? String;
+                    self.name.text = parsedRes.value(forKey: "first_name") as? String;
+                    self.email.text = parsedRes.value(forKey: "email") as? String;
+                    self.session.text = parsedRes.value(forKey: "expires") as? String;
 
                     return;
 
                 });
-
 
     }
 

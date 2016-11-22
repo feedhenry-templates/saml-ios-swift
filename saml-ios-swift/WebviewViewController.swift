@@ -17,42 +17,42 @@ import UIKit
 
 class WebviewViewController: UIViewController, UIWebViewDelegate {
 
-    internal var url: NSURL?
+    internal var url: URL?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let webView: UIWebView = UIWebView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
+        let webView: UIWebView = UIWebView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
         guard let url = url else {
             return
         }
-        webView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight];
+        webView.autoresizingMask = [.flexibleWidth, .flexibleHeight];
         webView.scalesPageToFit = true;
-        webView.loadRequest(NSURLRequest(URL: url))
+        webView.loadRequest(URLRequest(url: url))
         webView.delegate = self;
         self.view.addSubview(webView)
     }
 
 
-    @available(iOS 2.0, *) func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
+    @available(iOS 2.0, *) func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
         print("Webview fail with error \(error)");
     }
 
-    @available(iOS 2.0, *) func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+    @available(iOS 2.0, *) func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         print("shouldStartLoadWithRequest");
-        let currentURL = request.URL!.absoluteString
+        let currentURL = request.url!.absoluteString
         print("URL: \(currentURL)");
-        if currentURL!.hasSuffix("login/ok") {
-            presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
-            NSNotificationCenter.defaultCenter().postNotificationName("WebViewClosed", object: nil)
+        if currentURL.hasSuffix("login/ok") {
+            presentingViewController?.dismiss(animated: true, completion: nil)
+            NotificationCenter.default.post(name: Notification.Name(rawValue: "WebViewClosed"), object: nil)
         }
         return true;
     }
 
-    @available(iOS 2.0, *) func webViewDidStartLoad(webView: UIWebView) {
+    @available(iOS 2.0, *) func webViewDidStartLoad(_ webView: UIWebView) {
         print("Webview started Loading")
     }
 
-    @available(iOS 2.0, *) func webViewDidFinishLoad(webView: UIWebView) {
+    @available(iOS 2.0, *) func webViewDidFinishLoad(_ webView: UIWebView) {
         print("Webview did finish load")
     }
 
