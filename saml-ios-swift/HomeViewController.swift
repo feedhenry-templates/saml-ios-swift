@@ -24,21 +24,21 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // TODO replace by #selector Swift2.2 syntax once BF uses Xcode7.3
-        NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: #selector(HomeViewController.onCloseWebview), name: "WebViewClosed", object: nil)
+        NotificationCenter.default.addObserver(self,
+            selector: #selector(HomeViewController.onCloseWebview), name: Notification.Name(rawValue: "WebViewClosed"), object: nil)
     }
 
-    @IBAction func login(sender: AnyObject) {
+    @IBAction func login(_ sender: AnyObject) {
 
-        self.signInButton.enabled = false;
+        self.signInButton.isEnabled = false;
 
         let args = ["token": Config.instance.uuid];
 
-        FH.cloud("/sso/session/login_host", method: HTTPMethod.POST,
-                args: args, headers: nil,
+        FH.cloud(path: "/sso/session/login_host", method: HTTPMethod.POST,
+                args: args as [String : AnyObject]?, headers: nil,
                 completionHandler: {
                     (response: Response, error: NSError?) -> Void in
-                    self.signInButton.enabled = true;
+                    self.signInButton.isEnabled = true;
                     if let error = error {
                         print("Cloud Call Failed, \(error)");
                         return
@@ -47,8 +47,8 @@ class HomeViewController: UIViewController {
 
                         // Display WebView
                         let controller = WebviewViewController()
-                        controller.url = NSURL(string: urlString!);
-                        self.presentViewController(controller, animated: true, completion: nil);
+                        controller.url = NSURL(string: urlString!) as URL?;
+                        self.present(controller, animated: true, completion: nil);
                         return;
                     }
                 })
@@ -57,7 +57,7 @@ class HomeViewController: UIViewController {
 
     func onCloseWebview() {
         print("onCloseWebview");
-        self.performSegueWithIdentifier("showLoggedIn", sender: self);
+        self.performSegue(withIdentifier: "showLoggedIn", sender: self);
     }
 
 
