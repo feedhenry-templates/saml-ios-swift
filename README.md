@@ -4,13 +4,13 @@
 
 Author: Daniel Passos   
 Level: Intermediate  
-Technologies: Swift 2.3, iOS, RHMAP, CocoaPods.  
+Technologies: Swift 3, iOS, RHMAP, CocoaPods.  
 Summary: A demonstration of how to work with [```SAML Service``` connector service](https://github.com/feedhenry-templates/saml-service). To configure the service in your RHMAP platform read the [SAML notes](https://github.com/feedhenry-templates/saml-service/blob/master/NOTES.md)
 Project : [Feed Henry](http://feedhenry.org)
 Target Product: RHMAP  
 Product Versions: RHMAP 3.10.0+   
-Source: https://github.com/feedhenry-templates/pushstarter-ios-app  
-Prerequisites: fh-ios-swift-sdk : 4.2+, Xcode : 8+, iOS SDK : iOS8+, CocoaPods: 1.1.0+
+Source: https://github.com/feedhenry-templates/saml-ios-swift  
+Prerequisites: fh-ios-swift-sdk : 5+, Xcode : 8+, iOS SDK : iOS8+, CocoaPods: 1.1.0+
 
 ## What is it?
 
@@ -22,7 +22,7 @@ If you do not have access to a RHMAP instance, you can sign up for a free instan
 
 ### RHMAP Studio
 
-This application and its cloud services are available as a project template in RHMAP as part of the "Push Notification Hello World" template.
+This application and its cloud services are available as a project template in RHMAP as part of the "SAML Example Project" template.
 
 ### Local Clone (ideal for Open Source Development)
 
