@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		062FBF3B7E43A13B6B6D4935 /* Pods_saml_ios_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F53E97D4DAF52FDB0AFD20 /* Pods_saml_ios_swift.framework */; };
+		884A4C781E77E2F8008A227C /* saml_ios_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A4C771E77E2F8008A227C /* saml_ios_swiftUITests.swift */; };
 		8A2A8C231CA47900001EF49F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A8C221CA47900001EF49F /* AppDelegate.swift */; };
 		8A2A8C2A1CA47900001EF49F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2A8C291CA47900001EF49F /* Assets.xcassets */; };
 		8A2A8C2D1CA47900001EF49F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A2A8C2B1CA47900001EF49F /* LaunchScreen.storyboard */; };
@@ -18,8 +19,21 @@
 		8A62001D1CAC4A67001F81A6 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A62001C1CAC4A67001F81A6 /* WebviewViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		884A4C7A1E77E2F8008A227C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A2A8C171CA478FF001EF49F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A2A8C1E1CA478FF001EF49F;
+			remoteInfo = "saml-ios-swift";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		23797C8CE7F20C727504CF7C /* Pods-saml-ios-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saml-ios-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-saml-ios-swift/Pods-saml-ios-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		884A4C751E77E2F8008A227C /* saml-ios-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "saml-ios-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		884A4C771E77E2F8008A227C /* saml_ios_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saml_ios_swiftUITests.swift; sourceTree = "<group>"; };
+		884A4C791E77E2F8008A227C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A2A8C1F1CA478FF001EF49F /* saml-ios-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "saml-ios-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2A8C221CA47900001EF49F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A2A8C291CA47900001EF49F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +49,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		884A4C721E77E2F8008A227C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A2A8C1C1CA478FF001EF49F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,10 +75,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		884A4C761E77E2F8008A227C /* saml-ios-swiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				884A4C771E77E2F8008A227C /* saml_ios_swiftUITests.swift */,
+				884A4C791E77E2F8008A227C /* Info.plist */,
+			);
+			path = "saml-ios-swiftUITests";
+			sourceTree = "<group>";
+		};
 		8A2A8C161CA478FF001EF49F = {
 			isa = PBXGroup;
 			children = (
 				8A2A8C211CA47900001EF49F /* saml-ios-swift */,
+				884A4C761E77E2F8008A227C /* saml-ios-swiftUITests */,
 				8A2A8C201CA478FF001EF49F /* Products */,
 				DC2D8BD0FEB0DA7FF4B031FA /* Pods */,
 				697C7CDC192626B4A174F733 /* Frameworks */,
@@ -68,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				8A2A8C1F1CA478FF001EF49F /* saml-ios-swift.app */,
+				884A4C751E77E2F8008A227C /* saml-ios-swiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +132,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		884A4C741E77E2F8008A227C /* saml-ios-swiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 884A4C7E1E77E2F8008A227C /* Build configuration list for PBXNativeTarget "saml-ios-swiftUITests" */;
+			buildPhases = (
+				884A4C711E77E2F8008A227C /* Sources */,
+				884A4C721E77E2F8008A227C /* Frameworks */,
+				884A4C731E77E2F8008A227C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				884A4C7B1E77E2F8008A227C /* PBXTargetDependency */,
+			);
+			name = "saml-ios-swiftUITests";
+			productName = "saml-ios-swiftUITests";
+			productReference = 884A4C751E77E2F8008A227C /* saml-ios-swiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		8A2A8C1E1CA478FF001EF49F /* saml-ios-swift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A2A8C471CA47900001EF49F /* Build configuration list for PBXNativeTarget "saml-ios-swift" */;
@@ -126,10 +176,15 @@
 		8A2A8C171CA478FF001EF49F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Red Hat";
 				TargetAttributes = {
+					884A4C741E77E2F8008A227C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8A2A8C1E1CA478FF001EF49F;
+					};
 					8A2A8C1E1CA478FF001EF49F = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0810;
@@ -151,11 +206,19 @@
 			projectRoot = "";
 			targets = (
 				8A2A8C1E1CA478FF001EF49F /* saml-ios-swift */,
+				884A4C741E77E2F8008A227C /* saml-ios-swiftUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		884A4C731E77E2F8008A227C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A2A8C1D1CA478FF001EF49F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +281,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		884A4C711E77E2F8008A227C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884A4C781E77E2F8008A227C /* saml_ios_swiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A2A8C1B1CA478FF001EF49F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,6 +302,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		884A4C7B1E77E2F8008A227C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A2A8C1E1CA478FF001EF49F /* saml-ios-swift */;
+			targetProxy = 884A4C7A1E77E2F8008A227C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		8A2A8C2B1CA47900001EF49F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -243,6 +322,35 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		884A4C7C1E77E2F8008A227C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = "saml-ios-swiftUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FH.saml-ios-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "saml-ios-swift";
+			};
+			name = Debug;
+		};
+		884A4C7D1E77E2F8008A227C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = "saml-ios-swiftUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "FH.saml-ios-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "saml-ios-swift";
+			};
+			name = Release;
+		};
 		8A2A8C451CA47900001EF49F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -366,6 +474,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		884A4C7E1E77E2F8008A227C /* Build configuration list for PBXNativeTarget "saml-ios-swiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				884A4C7C1E77E2F8008A227C /* Debug */,
+				884A4C7D1E77E2F8008A227C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8A2A8C1A1CA478FF001EF49F /* Build configuration list for PBXProject "saml-ios-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
