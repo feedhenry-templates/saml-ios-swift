@@ -1,4 +1,5 @@
-# saml-ios-swift [![Build Status](https://travis-ci.org/feedhenry-templates/saml-ios-swift.png)](https://travis-ci.org/feedhenry-templates/saml-ios-swift)
+# saml-ios-swift
+[![Build Status](https://travis-ci.org/feedhenry-templates/saml-ios-swift.png)](https://travis-ci.org/feedhenry-templates/saml-ios-swift)
 
 > ObjC version is available [here](https://github.com/feedhenry-templates/saml-ios-app/).
 
