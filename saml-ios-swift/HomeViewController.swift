@@ -41,6 +41,9 @@ class HomeViewController: UIViewController {
                     self.signInButton.isEnabled = true;
                     if let error = error {
                         print("Cloud Call Failed, \(error)");
+                        let alert = UIAlertController(title: "Cloud Call Failed", message: error.localizedDescription, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                         return
                     } else if let parsedRes = response.parsedResponse as? [String:String] {
                         let urlString = parsedRes["sso"];
