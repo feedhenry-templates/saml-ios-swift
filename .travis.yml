@@ -5,7 +5,7 @@ xcode_scheme: saml-ios-swift
 xcode_sdk: iphonesimulator
 
 before_install:
-  - pod repo update
+  - travis_wait pod repo update --silent
 
 script:
   - xcodebuild clean build -workspace saml-ios-swift.xcworkspace -scheme saml-ios-swift -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
@@ -16,4 +16,3 @@ notifications:
 branches:
   only:
     - master
-    - swift3
