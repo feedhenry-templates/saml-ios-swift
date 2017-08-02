@@ -11,13 +11,13 @@ BUILD_CONFIG = params?.BUILD_CONFIG?.trim()                                // e.
 //CODE_SIGN_PROFILE_ID = "redhat-dist-dp"
 //BUILD_CONFIG = "Debug"
 
-// sample values commented below are for https://github.com/feedhenry-templates/helloworld-ios-swift
+// sample values commented below are for https://github.com/feedhenry-templates/saml-ios-swift
 /* ------------- use these to hardcode things in Jenkinsfile ---------------- */
-PROJECT_NAME = "helloworld-ios-app"
-INFO_PLIST = "helloworld-ios-app/helloworld-ios-app-Info.plist"
+PROJECT_NAME = "saml-ios-swift"
+INFO_PLIST = "saml-ios-swift/saml-ios-swift-Info.plist"
 VERSION = "0.1-alpha"
 SHORT_VERSION = "0.1"
-BUNDLE_ID = "com.feedhenry.helloworld-ios-app"
+BUNDLE_ID = "com.feedhenry.saml-ios-swift"
 OUTPUT_FILE_NAME = "myapp.ipa"
 SDK = "iphoneos"
 
@@ -29,11 +29,11 @@ CLEAN = true                          // do a clean build and sign
 
 /* ------------- use these to get things from Jenkins parametrized build ---------------- */
 /*
-PROJECT_NAME = params?.PROJECT_NAME?.trim()                         // e.g. "helloworld-ios-app"
-INFO_PLIST = params?.INFO_PLIST?.trim()                             // e.g. "helloworld-ios-app/helloworld-ios-app-Info.plist"
+PROJECT_NAME = params?.PROJECT_NAME?.trim()                         // e.g. "saml-ios-swift"
+INFO_PLIST = params?.INFO_PLIST?.trim()                             // e.g. "saml-ios-swift/saml-ios-swift-Info.plist"
 VERSION = params?.APP_VERSION?.trim()                               // e.g. "0.1-alpha"
 SHORT_VERSION = params?.APP_SHORT_VERSION?.trim()                   // e.g. "0.1"
-BUNDLE_ID = params?.BUNDLE_ID?.trim()                               // e.g. "com.feedhenry.helloworld-ios-app"
+BUNDLE_ID = params?.BUNDLE_ID?.trim()                               // e.g. "com.feedhenry.saml-ios-swift"
 OUTPUT_FILE_NAME = params?.OUTPUT_FILE_NAME?.trim() ?: "myapp.ipa"  // if not set, myapp.ipa will be used
 SDK = params?.OUTPUT_FILE_NAME?.trim() ?: "iphoneos"                // if not set, "iphoneos" will be used
 
