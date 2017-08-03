@@ -18,7 +18,7 @@ INFO_PLIST = "saml-ios-swift/saml-ios-swift-Info.plist"
 VERSION = "0.1-alpha"
 SHORT_VERSION = "0.1"
 BUNDLE_ID = "com.feedhenry.saml-ios-swift"
-OUTPUT_FILE_NAME = "myapp.ipa"
+OUTPUT_FILE_NAME="${PROJECT_NAME}-${BUILD_CONFIG}.ipa"
 SDK = "iphoneos"
 
 XC_VERSION = ""                       // use something like 8.3 to use a specific XCode version.
