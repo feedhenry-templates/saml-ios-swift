@@ -6,12 +6,12 @@
 Author: Daniel Passos   
 Level: Intermediate  
 Technologies: Swift 3, iOS, RHMAP, CocoaPods.  
-Summary: A demonstration of how to work with [```SAML Service``` connector service](https://github.com/feedhenry-templates/saml-service). To configure the service in your RHMAP platform read the [SAML notes](https://github.com/feedhenry-templates/saml-service/blob/master/NOTES.md)
-Project : [Feed Henry](http://feedhenry.org)
+Summary: A demonstration of how to work with [```SAML Service``` connector service](https://github.com/feedhenry-templates/saml-service). To configure the service in your RHMAP platform read the [SAML notes](https://github.com/feedhenry-templates/saml-service/blob/master/NOTES.md)   
+Project: [Feed Henry](http://feedhenry.org)
 Target Product: RHMAP  
-Product Versions: RHMAP 3.10.0+   
+Product Versions: RHMAP 3.10.0+      
 Source: https://github.com/feedhenry-templates/saml-ios-swift  
-Prerequisites: fh-ios-swift-sdk : 5+, Xcode : 8+, iOS SDK : iOS8+, CocoaPods: 1.1.0+
+Prerequisites: fh-ios-swift-sdk: 5+, Xcode: 9+, iOS SDK: iOS 9+, CocoaPods: 1.3.0+
 
 ## What is it?
 
