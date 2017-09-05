@@ -15,8 +15,8 @@ BUILD_CONFIG = params?.BUILD_CONFIG?.trim()                                // e.
 /* ------------- use these to hardcode values in Jenkinsfile ---------------- */
 PROJECT_NAME = "saml-ios-swift"
 INFO_PLIST = "saml-ios-swift/saml-ios-swift-Info.plist"
-VERSION = "0.1-alpha"
-SHORT_VERSION = "0.1"
+VERSION = "1.0.0"
+SHORT_VERSION = "1.0"
 BUNDLE_ID = "com.feedhenry.saml-ios-swift"
 OUTPUT_FILE_NAME="${PROJECT_NAME}-${BUILD_CONFIG}.ipa"
 SDK = "iphoneos"
