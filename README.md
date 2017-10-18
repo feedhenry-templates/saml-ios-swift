@@ -1,21 +1,21 @@
 # saml-ios-swift
-[![Build Status](https://travis-ci.org/feedhenry-templates/saml-ios-swift.png)](https://travis-ci.org/feedhenry-templates/saml-ios-swift)
+[![circle-ci](https://img.shields.io/circleci/project/github/feedhenry-templates/saml-ios-swift/master.svg)](https://circleci.com/gh/feedhenry-templates/saml-ios-swift)
 
 > ObjC version is available [here](https://github.com/feedhenry-templates/saml-ios-app/).
 
-Author: Daniel Passos   
+Author: Daniel Passos  
 Level: Intermediate  
 Technologies: Swift 3, iOS, RHMAP, CocoaPods.  
-Summary: A demonstration of how to work with [```SAML Service``` connector service](https://github.com/feedhenry-templates/saml-service). To configure the service in your RHMAP platform read the [SAML notes](https://github.com/feedhenry-templates/saml-service/blob/master/NOTES.md)
-Project : [Feed Henry](http://feedhenry.org)
+Summary: A demonstration of how to work with [`SAML Service` connector service](https://github.com/feedhenry-templates/saml-service). To configure the service in your RHMAP platform read the [SAML notes](https://github.com/feedhenry-templates/saml-service/blob/master/NOTES.md)  
+Project : [Feed Henry](http://feedhenry.org)  
 Target Product: RHMAP  
 Product Versions: RHMAP 3.10.0+   
 Source: https://github.com/feedhenry-templates/saml-ios-swift  
-Prerequisites: fh-ios-swift-sdk: 5+, Xcode : 8+, iOS SDK: iOS 9+, CocoaPods: 1.3.0+
+Prerequisites: fh-ios-swift-sdk: 6+, Xcode : 9+, iOS SDK: iOS 9+, CocoaPods: 1.3.0+
 
 ## What is it?
 
-The ```SAML``` project demonstrates how to how with [```SAML Service``` connector service](https://github.com/feedhenry-templates/saml-service)
+The `SAML` project demonstrates how to how with [`SAML Service` connector service](https://github.com/feedhenry-templates/saml-service)
 
 If you do not have access to a RHMAP instance, you can sign up for a free instance at [https://openshift.feedhenry.com/](https://openshift.feedhenry.com/).
 
@@ -33,17 +33,17 @@ If you wish to contribute to this template, the following information may be hel
 
 1. Clone this project
 
-2. Populate ```saml-ios-swift/fhconfig.plist``` with your values as explained [here](http://docs.feedhenry.com/v3/dev_tools/sdks/ios.html#ios-configure).
+2. Populate `saml-ios-swift/fhconfig.plist` with your values as explained [here](https://access.redhat.com/documentation/en-us/red_hat_mobile_application_platform_hosted/3/html/client_sdk/native-ios-swift).
 
-3. Run ```pod install```
+3. Run `pod install`
 
-4. Open saml-ios-swift.xcworkspace
+4. Open `saml-ios-swift.xcworkspace`
 
 4. Run the project
 
 ### iOS9 and non TLS1.2 backend
 
-If your RHMAP is depoyed without TLS1.2 support, open as source  ```saml-ios-swift/saml-ios-swift-Info.plist``` add the exception lines:
+If your RHMAP is depoyed without TLS1.2 support, open as source  `saml-ios-swift/saml-ios-swift-Info.plist` add the exception lines:
 
 ```
   <key>NSAppTransportSecurity</key>
